@@ -83,7 +83,7 @@ public class FF16PackBuilder
             ct.ThrowIfCancellationRequested();
         }
 
-        string actualDir = Path.Combine(dir, _options.Name);
+        string actualDir = dir;
 
         var files = fileList.Order().ToList();
         foreach (var file in files)
